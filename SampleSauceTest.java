@@ -21,6 +21,14 @@ public class SampleSauceTest {
     /**
      * Goes to Sauce Lab's guinea-pig page and prints title
      */
+   WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+ 
+    /**
+     * Goes to Sauce Lab's guinea-pig page and prints title
+     */
+ 
+    driver.get("https://saucelabs.com/test/guinea-pig");
+    System.out.println("title of page is: " + driver.getTitle());
  
     driver.get("https://saucelabs.com/test/guinea-pig");
     System.out.println("title of page is: " + driver.getTitle());
